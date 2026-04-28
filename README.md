@@ -1,3 +1,4 @@
+# IsaacSimROS2Teleop-FrankaResearch3
 # Panda Hand Controller — Vision Teleoperation
 
 This project provides a complete vision-based teleoperation pipeline to control a **Franka Emika Panda** robot in **NVIDIA Isaac Sim** using just a webcam and your hand gestures.
@@ -92,5 +93,5 @@ You can hold your hand up to the camera (Open Palm) and the robot will immediate
 - **Robot is jittery/shaking**: Ensure your room is well-lit for MediaPipe. If necessary, increase the `alpha` value in the `LowPassFilter` inside `hand_pose_publisher.py` (e.g., from `0.4` to `0.2` for smoother but slightly slower movement).
 - **Robot doesn't move but IK is computing**: Check the Articulation Controller's `targetPrim` path. It must exactly match the path to the Franka articulation root in the Stage tree.
 - **IK failing (success=False)**: Hand coordinates might be pushing the arm outside its reachable workspace. Make sure your hand remains relatively centered in the camera frame.
-# IsaacSimROS2Teleop-FrankaResearch3
-# IsaacSimROS2Teleop-FrankaResearch3
+
+
